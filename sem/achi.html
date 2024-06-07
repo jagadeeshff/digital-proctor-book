@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Proctor Book</title>
+    <link rel="stylesheet" href="achi.css">
+    <link rel="icon" href="reading.png">
+</head>
+<body>
+  <div class="navi2">
+    <nav>
+      <a href="homepage.html">Home</a>
+      <a href="proctor.html">Proctor</a>
+      <a href="contact.html">contact</a>
+    </nav>
+  </div>
+  <div class="form">
+    <!-- Use the action attribute to specify the script to handle the form submission -->
+    <form action="importData.php" method="post"enctype="multipart/form-data">
+      <h2>Upload pdf</h2>
+      <!-- Use input elements with name attributes to capture the values -->
+      <input type="text" name="name" placeholder="Name" required class="inpname" />
+      <input type="numder" name="rollno" placeholder="Reg no" required class="inpnum"/>
+      <input type="hidden" name="username" id="username" required/> <!-- Hidden field for concatenated username -->
+      <input class="mmeee" type="file" name="file" placeholder="upload" required />
+      <!-- Use a button element with type="submit" to submit the form -->
+      <button type="submit" class="btn" name="importSubmit">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Submit
+      </button>
+    </form>
+  </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="main.js"></script>
+<script>
+  // JavaScript code to concatenate name and roll number
+  $(document).ready(function(){
+    $('form').submit(function(){
+      var name = $('[name="name"]').val(); // Get the value of the name field
+      var rollno = $('[name="rollno"]').val(); // Get the value of the roll number field
+      var username = name + rollno; // Concatenate name and roll number
+      $('#username').val(username); // Set the value of the hidden field to the concatenated username
+    });
+  });
+</script>
+</body>
+</html>

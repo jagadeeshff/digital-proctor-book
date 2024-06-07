@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jerusalem college</title>
+  <link rel="icon" href="reading.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="student.css" rel="stylesheet">
+</head>
+<body>
+  <div class="navi">
+    <nav>
+      <a href="homepage.html">Home</a>
+      <a href="proctor.html">Proctor</a>
+      <a href="contact.html">contact</a>
+    </nav>
+  </div>
+  <div class="login-box">
+    <h2>Student Login</h2>
+    <form id="loginForm" action="student_fetcher.php" method="GET"> <!-- Change method to GET -->
+      <div class="user-box">
+        <input type="number" name="rollno" id="rollno" required=""> <!-- Give an ID to the roll number input -->
+        <label>Register no</label>
+      </div>
+      <div class="user-box2">
+        <select name="name" id="name" class="boxclass"> <!-- Give an ID to the name select -->
+          <option value="Jagadeesh">Jagadeesh</option>
+          <option value="Godwin">Godwin</option>
+          <option value="Dineshwar">Dineshwar</option>
+          <option value="Jayasooriya">Jayasooriya</option>
+        </select>
+      </div>
+      <a href="#" onclick="submitForm()"> <!-- Call JavaScript function on click -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Submit
+      </a>
+    </form>
+  </div>
+
+  <script>
+    function submitForm() {
+      var rollno = document.getElementById("rollno").value; // Get roll number value
+      var name = document.getElementById("name").value; // Get name value
+      var concatenatedValue = name + "" + rollno; // Concatenate name and roll number
+      var fetcherUrl = "student_fetcher.php?concatenatedValue=" + concatenatedValue; // Construct URL with concatenated value
+      window.location.href = fetcherUrl; // Redirect to student_fetcher.php with concatenated value
+    }
+  </script>
+</body>
+</html>

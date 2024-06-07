@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Representation</title>
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div style="width: 80%; margin: 0 auto;">
+        <canvas id="myChart"></canvas> <!-- Chart will be rendered here -->
+    </div>
+
+    <script>
+        // Function to fetch data from PHP script
+        function fetchData() {
+            fetch('newfetch.php?table_name=your_table_name')
+                .then(response => response.json())
+                .then(data => {
+                    // Call function to render chart with retrieved data
+                    renderChart(data);
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        }
+
+        // Function to render chart
+        function renderChart(data) {
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: data.subject_codes,
+                    datasets: [{
+                        label: 'Test 1 Marks',
+                        data: data.test1_marks,
+                        backgroundColor: 'rgba(255, 99, 132, 0.5)'
+                    }, {
+                        label: 'Attendance',
+                        data: data.attendances,
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)'
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        }
+
+        // Call fetch function when page loads
+        window.onload = fetchData;
+    </script>
+</body>
+</html>

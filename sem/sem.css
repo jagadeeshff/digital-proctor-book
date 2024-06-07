@@ -1,0 +1,798 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.semhead{
+    width: 100%;
+    height: 60px;
+    background-color: violet;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    background: transparent
+}
+.selector{
+    margin-left: 7%;
+}
+.selector select{
+    width: 200%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-bottom: solid black 2px;
+    margin-top:16%;
+}
+.selector select:hover{
+    outline: none;
+}
+.bars1{
+    position: absolute;
+    font-size: xx-large;
+    right: 7%;
+    cursor: pointer;
+    top: 15%;
+}
+.popup1{
+    background-color: black;
+    position: absolute;
+    color: white;
+    width: 25%;
+    height: 100%;
+    z-index: 1;
+    padding: 25px;
+    transition: 1.2s;
+    left: -60%;
+}
+.close{
+    text-align: right;
+    margin-top: 26px;
+    cursor: pointer;
+}
+.popup1 a{
+    display: block;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 40px;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    margin-left: 50px;
+}
+.popup1 a:hover{
+    color: grey;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+.stureg{
+    position: absolute;
+    left: 7%;
+}
+.stureg select{
+    border: solid black 1px;
+    width: 100%;
+}
+.pro1name{
+    margin-top: 30px;
+    font-style: italic;
+    position: relative;
+    left: 23px;
+    width: fit-content;
+}
+.sem1content{
+    border-collapse: collapse;
+}
+.sem1content th{
+width: 100px;
+padding: 8px;
+}
+.sem1content input{
+border: none;
+text-align: center;
+outline: none;
+font-size: medium;
+}
+.sem1content ::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sem1table{
+    margin-top: 50px;
+}
+.foot{
+    padding: 40px;
+    margin: 20px;
+    margin-left: 5%;
+}
+.foot .sem1track{
+    display: grid ;
+}
+.sem1track input{
+    width: 15%;
+    outline: none;
+    border: none;
+    border-bottom: solid black 2px;
+}
+.sem1track h2{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.semfooter{
+    margin-top: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    height: 200px;
+}
+.btn1{
+    padding: 10px;
+    width: 160px;
+    position:absolute;
+    right: 7%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+/* semester 2 */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.semhead2{
+    background-color:rgb(164, 210, 164);
+    width: 100%;
+    height: 60px;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+}
+.main2{
+    display: flex;
+    justify-content: space-between;
+}
+.pro1name2{
+    margin-top: 30px;
+    font-style: italic;
+    position: relative;
+    left: 23px;
+    width: fit-content;
+}
+.sem2content{
+    border-collapse: collapse;
+}
+.sem2content th{
+width: 100px;
+padding: 8px;
+}
+.stureg2{
+    margin-left: 24px;
+    margin-top: 27px;
+}
+.stureg2 input{
+    padding: 10px;
+    font-size: medium;
+    border: none;
+    border-bottom: solid 2px;
+    outline: none;
+    border-radius: 5px;
+}
+.sem2content input{
+border: none;
+text-align: center;
+outline: none;
+font-size: medium;
+}
+.sem2content ::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sem2table{
+    margin-top: 50px;
+}
+.foot2{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.sem2track input{
+    width: 250px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    border-style: solid 3px;
+    border-bottom: solid 2px;
+    outline: none;
+}
+.sem2track:hover{
+    outline: none;
+}
+.semfooter2{
+    margin-top: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    height: 200px;
+}
+.btn2{
+    padding: 10px;
+    width: 140px;
+    position:absolute;
+    right: 8%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+/* semester 3 */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.semhead3{
+    width: 100%;
+    height: 60px;
+    background-color: violet;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    background: transparent
+}
+.main3{
+    display: flex;
+    justify-content: space-between;
+}
+.pro1name3{
+    margin-top: 30px;
+    font-style: italic;
+    position: relative;
+    left: 23px;
+    width: fit-content;
+}
+.sem3content{
+    border-collapse: collapse;
+}
+.sem3content th{
+width: 100px;
+padding: 8px;
+}
+.stureg3{
+    margin-left: 24px;
+    margin-top: 27px;
+}
+.stureg3 input{
+    padding: 10px;
+    font-size: medium;
+    border: none;
+    border-bottom: solid 2px;
+    outline: none;
+    border-radius: 5px;
+}
+.sem3content input{
+border: none;
+text-align: center;
+outline: none;
+font-size: medium;
+}
+.sem3content ::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sem3table{
+    margin-top: 50px;
+}
+.foot3{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.sem3track input{
+    width: 250px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    border-style: solid 3px;
+    border-bottom: solid 2px;
+    outline: none;
+}
+.sem3track:hover{
+    outline: none;
+}
+.semfooter3{
+    margin-top: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    height: 200px;
+}
+.btn3{
+    padding: 10px;
+    width: 140px;
+    position:absolute;
+    right: 8%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* semester 4 */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.semhead4{
+    width: 100%;
+    height: 60px;
+    background-color: violet;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    background: transparent
+}
+.main4{
+    display: flex;
+    justify-content: space-between;
+}
+.pro1name4{
+    margin-top: 30px;
+    font-style: italic;
+    position: relative;
+    left: 23px;
+    width: fit-content;
+}
+.sem4content{
+    border-collapse: collapse;
+}
+.sem4content th{
+width: 100px;
+padding: 8px;
+}
+.stureg4{
+    margin-left: 24px;
+    margin-top: 27px;
+}
+.stureg4 input{
+    padding: 10px;
+    font-size: medium;
+    border: none;
+    border-bottom: solid 2px;
+    outline: none;
+    border-radius: 5px;
+}
+.sem4content input{
+border: none;
+text-align: center;
+outline: none;
+font-size: medium;
+}
+.sem4content ::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sem4table{
+    margin-top: 50px;
+}
+.foot4{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.sem4track input{
+    width: 250px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    border-style: solid 3px;
+    border-bottom: solid 2px;
+    outline: none;
+}
+.sem4track:hover{
+    outline: none;
+}
+.semfooter4{
+    margin-top: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    height: 200px;
+}
+.btn4{
+    padding: 10px;
+    width: 140px;
+    position:absolute;
+    right: 8%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* semester 5 */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.semhead5{
+    width: 100%;
+    height: 60px;
+    background-color: violet;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    background: transparent
+}
+.main5{
+    display: flex;
+    justify-content: space-between;
+}
+.pro1name5{
+    margin-top: 30px;
+    font-style: italic;
+    position: relative;
+    left: 23px;
+    width: fit-content;
+}
+.sem5content{
+    border-collapse: collapse;
+}
+.sem5content th{
+width: 100px;
+padding: 8px;
+}
+.stureg5{
+    margin-left: 24px;
+    margin-top: 27px;
+}
+.stureg5 input{
+    padding: 10px;
+    font-size: medium;
+    border: none;
+    border-bottom: solid 2px;
+    outline: none;
+    border-radius: 5px;
+}
+.sem5content input{
+border: none;
+text-align: center;
+outline: none;
+font-size: medium;
+}
+.sem5content ::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sem5table{
+    margin-top: 50px;
+}
+.foot5{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.sem5track input{
+    width: 250px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    border-style: solid 3px;
+    border-bottom: solid 2px;
+    outline: none;
+}
+.sem5track:hover{
+    outline: none;
+}
+.semfooter5{
+    margin-top: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    height: 200px;
+}
+.btn5{
+    padding: 10px;
+    width: 140px;
+    position:absolute;
+    right: 8%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* semester 6 */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.semhead6{
+    width: 100%;
+    height: 60px;
+    background-color: violet;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    background: transparent
+}
+.main6{
+    display: flex;
+    justify-content: space-between;
+}
+.pro1name6{
+    margin-top: 30px;
+    font-style: italic;
+    position: relative;
+    left: 23px;
+    width: fit-content;
+}
+.sem6content{
+    border-collapse: collapse;
+}
+.sem6content th{
+width: 100px;
+padding: 8px;
+}
+.stureg6{
+    margin-left: 24px;
+    margin-top: 27px;
+}
+.stureg6 input{
+    padding: 10px;
+    font-size: medium;
+    border: none;
+    border-bottom: solid 2px;
+    outline: none;
+    border-radius: 5px;
+}
+.sem6content input{
+border: none;
+text-align: center;
+outline: none;
+font-size: medium;
+}
+.sem6content ::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sem6table{
+    margin-top: 50px;
+}
+.foot6{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.sem6track input{
+    width: 250px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    border-style: solid 3px;
+    border-bottom: solid 2px;
+    outline: none;
+}
+.sem6track:hover{
+    outline: none;
+}
+.semfooter6{
+    margin-top: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    height: 200px;
+}
+.btn6{
+    padding: 10px;
+    width: 140px;
+    position:absolute;
+    right: 8%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* semester 7 */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.semhead7{
+    width: 100%;
+    height: 60px;
+    background-color: violet;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    background: transparent
+}
+.main7{
+    display: flex;
+    justify-content: space-between;
+}
+.pro1name7{
+    margin-top: 30px;
+    font-style: italic;
+    position: relative;
+    left: 23px;
+    width: fit-content;
+}
+.sem7content{
+    border-collapse: collapse;
+}
+.sem7content th{
+width: 100px;
+padding: 8px;
+}
+.stureg7{
+    margin-left: 24px;
+    margin-top: 27px;
+}
+.stureg7 input{
+    padding: 10px;
+    font-size: medium;
+    border: none;
+    border-bottom: solid 2px;
+    outline: none;
+    border-radius: 5px;
+}
+.sem7content input{
+border: none;
+text-align: center;
+outline: none;
+font-size: medium;
+}
+.sem7content ::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sem7table{
+    margin-top: 50px;
+}
+.foot7{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.sem7track input{
+    width: 250px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    border-style: solid 3px;
+    border-bottom: solid 2px;
+    outline: none;
+}
+.sem7track:hover{
+    outline: none;
+}
+.semfooter7{
+    margin-top: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    height: 200px;
+}
+.btn7{
+    padding: 10px;
+    width: 140px;
+    position:absolute;
+    right: 8%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+/* Semester 8 */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.semhead8{
+    width: 100%;
+    height: 60px;
+    background-color: violet;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    background: transparent
+}
+.main8{
+    display: flex;
+    justify-content: space-between;
+}
+.pro1name8{
+    margin-top: 30px;
+    font-style: italic;
+    position: relative;
+    left: 23px;
+    width: fit-content;
+}
+.sem8content{
+    border-collapse: collapse;
+}
+.sem8content th{
+width: 100px;
+padding: 8px;
+}
+.stureg8{
+    margin-left: 24px;
+    margin-top: 27px;
+}
+.stureg8 input{
+    padding: 10px;
+    font-size: medium;
+    border: none;
+    border-bottom: solid 2px;
+    outline: none;
+    border-radius: 5px;
+}
+.sem8content input{
+border: none;
+text-align: center;
+outline: none;
+font-size: medium;
+}
+.sem8content ::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sem8table{
+    margin-top: 50px;
+}
+.foot8{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.sem8track input{
+    width: 250px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    border-style: solid 3px;
+    border-bottom: solid 2px;
+    outline: none;
+}
+.sem8track:hover{
+    outline: none;
+}
+.semfooter8{
+    margin-top: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    height: 200px;
+}
+.btn8{
+    padding: 10px;
+    width: 140px;
+    position:absolute;
+    right: 8%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+
